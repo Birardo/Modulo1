@@ -1,0 +1,19 @@
+using System.Net;
+using System.Threading.Channels;
+
+double TotalCompra = 0.0;
+char ContinuarCompra = 's';
+double PrecoItem = 0;
+
+Console.WriteLine("--- Carrinho Compra ---");
+while (ContinuarCompra == 's')
+{
+
+
+    Console.WriteLine($"Digite o preço do item: {PrecoItem}");
+    PrecoItem = Convert.ToDouble((Console.ReadLine()));
+    Console.WriteLine("Deseja adicionar mais itens? (s/n):" + ContinuarCompra);
+    ContinuarCompra = Convert.ToChar((Console.ReadLine().ToLower()[0]));
+    TotalCompra += PrecoItem;
+}
+Console.WriteLine($"O total da compra foi de {TotalCompra}");
