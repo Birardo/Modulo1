@@ -1,0 +1,31 @@
+double Nota = 8;
+
+if (Nota >= 9.0)
+{
+    Console.WriteLine($"Nota de aluno: {Nota}");
+    Console.WriteLine("Conceito: A");
+}
+else if(Nota >= 8.0 && Nota < 9.0)
+{
+    Console.WriteLine($"Nota de aluno: {Nota}");
+    Console.WriteLine("Conceito: B");
+}
+else if (Nota >= 7.0 && Nota < 8.0)
+{
+    Console.WriteLine($"Nota de aluno: {Nota}");
+    Console.WriteLine("Conceito: C");
+}
+else if (Nota >= 6.0 && Nota < 7.0)
+{
+    Console.WriteLine($"Nota de aluno: {Nota}");
+    Console.WriteLine("Conceito: D");
+}
+else if (Nota < 6)
+{
+    Console.WriteLine($"Nota de aluno: {Nota}");
+    Console.WriteLine("Conceito: F");
+}
+else
+{
+    Console.WriteLine("código inválido!");
+}
