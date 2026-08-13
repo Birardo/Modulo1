@@ -1,0 +1,23 @@
+﻿string ProfissionalName = "João Programador";
+string ContactEmail = "joao.prog@example.com";
+int DateBorn = 2009;
+bool isDisponible = false;
+string Status = (isDisponible == true) ? "Status : Disponível para projetos" : "Não Disponível no momento";
+int DateTime = 2026 - DateBorn;
+
+if (isDisponible == true)
+{
+    Console.WriteLine("--- Cartão de Visitas Digital ---");
+    Console.WriteLine($"Nome: {ProfissionalName}");
+    Console.WriteLine($"Email: {ContactEmail}");
+    Console.WriteLine($"Idade: {DateTime}");
+    Console.WriteLine(Status);
+}
+else
+{
+    Console.WriteLine("--- Status Atualizado ---");
+    Console.WriteLine($"Nome: {ProfissionalName}");
+    Console.WriteLine($"Email: {ContactEmail}");
+    Console.WriteLine($"Idade: {DateTime}");
+    Console.WriteLine(Status);
+}

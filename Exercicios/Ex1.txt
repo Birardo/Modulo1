@@ -1,0 +1,9 @@
+﻿string Nome = "João Ricardo Panunto Verderi";
+int Idade = 16;
+double Peso = 85.59;
+bool isEstimacao = true;
+
+Console.WriteLine("Meu nome: " + Nome);
+Console.WriteLine($"Minha idade: {Idade} anos");
+Console.WriteLine($"Meu peso: {Peso}Kg");
+Console.WriteLine($"Tenho um animal de estimação? {isEstimacao}");
